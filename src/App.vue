@@ -1,3 +1,3 @@
 <template>
-<LikeNumber></LikeNumber>
+  <LikeNumber></LikeNumber>
 </template>
