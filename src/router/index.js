@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LikeNumber from '@/components/LikeNumber'
+import LikeNumber from '@/components/LikeNumber.vue'
 
 Vue.use(Router)
 
