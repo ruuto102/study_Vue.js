@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import LikeNumber from "./LikeNumber.vue";
+import LikeNumber from './components/LikeNumber.vue';
 
 Vue.config.productionTip = false
 Vue.component("LikeNumber", LikeNumber);
