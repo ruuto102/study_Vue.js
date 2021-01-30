@@ -7,6 +7,9 @@ import LikeNumber from './components/LikeNumber.vue';
 
 Vue.config.productionTip = false
 Vue.component("LikeNumber", LikeNumber);
+Vue.filter("upperCase", function(value){
+  return value.toUpperCase()
+});
 
 /* eslint-disable no-new */
 new Vue({

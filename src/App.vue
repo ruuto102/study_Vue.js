@@ -10,7 +10,7 @@
 </keep-alive>
 <div style="padding: 10rem;">
   <h2>イベントのフォーム</h2>
-
+  <EventTitle v-model="eventData.title"></EventTitle>
   <label for="maxNumber">最大人数</label>
   <input id="maxNumber" type="number" v-model.number="eventData.maxNumber">
   <p>{{eventData.maxNumber}}</p>
@@ -56,13 +56,15 @@
 import LikeHeader from "./components/LikeHeader.vue";
 import About from "./components/About.vue";
 import Home from "./components/Home.vue";
+import EventTitle from "./components/EventTitle.vue";
+import CountNumber from "./components/CountNumber.vue";
 
 export default {
   data() {
     return {
       number: 10,
       locations: ["東京","大阪","名古屋"],
-      currentComponent: 'About',
+      currentComponent: 'Home',
       eventData:{
         title: "",
         maxNumber:0,
@@ -80,7 +82,9 @@ export default {
   components: {
     LikeHeader: LikeHeader,
     About,
-    Home
+    Home,
+    EventTitle,
+    CountNumber
   }
 }
 </script>
