@@ -8,17 +8,9 @@
 </template>
 
 <script>
+import { tokyoNumber } from "@/tokyoNumber.js";
+
 export default {
-  data () {
-    return {
-      title: "Welcom to Tokyo",
-      number: 0
-    };
-  },
-  filters: {
-    lowerCase(value) {
-      return value.toLowerCase();
-    }
-  }
-}
+  mixins: [tokyoNumber]
+};
 </script>
