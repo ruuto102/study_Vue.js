@@ -10,22 +10,13 @@
 
 <script>
 import CountNumber from "./CountNumber.vue";
+import { tokyoNumber } from "@/tokyoNumber.js";
 
 export default {
-  componets: {
+  mixins: [tokyoNumber],
+  components: {
     CountNumber
     },
-  data () {
-    return {
-      title: "Welcom to Tokyo",
-      number: 0
-    };
-  },
-  filters: {
-    lowerCase(value) {
-      return value.toLowerCase();
-    }
-  },
   directives: {
     border(el, biding) {
       el.style.borderWidth = biding.value.width;

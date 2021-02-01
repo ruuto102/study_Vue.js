@@ -8,7 +8,7 @@
 <keep-alive>
 <component :is="currentComponent"></component>
 </keep-alive>
-<div style="padding: 10rem;">
+<div style="padding: 3rem;">
   <h2>イベントのフォーム</h2>
   <EventTitle v-model="eventData.title"></EventTitle>
   <label for="maxNumber">最大人数</label>
